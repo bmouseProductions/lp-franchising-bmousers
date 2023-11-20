@@ -5,24 +5,22 @@ import swiper from '../../assets/image/animation/swiper.json'
 
 import { Botao } from "../../components/Button";
 
-import SalusBanner from "../../assets/image/banner/salusBanner.webp";
-import SorridentsBanner from "../../assets/image/banner/sorridentsBanner.webp";
-import GiolaserBanner from "../../assets/image/banner/giolaserBanner.webp";
-import SorridenBanner from "../../assets/image/banner/sorridenBanner.webp";
+import SalusBanner from "../../assets/image/carrosel/salusDesk.webp";
+import SorridentsBanner from "../../assets/image/carrosel/sorridentsDesk.webp";
+import GiolaserBanner from "../../assets/image/carrosel/giolaserDesk.webp";
+import SorridenBanner from "../../assets/image/carrosel/sorridenDesk.webp";
 
 import Salus from "../../assets/image/Logos/franchisingbmouse.svg";
 import Sorridents from "../../assets/image/Logos/sorridents.svg";
 import Giolaser from "../../assets/image/Logos/giolaser.svg";
 import Sorriden from "../../assets/image/Logos/sorriden.svg";
 
-import SalusMobile from "../../assets/image/carrosel/salusMobile.png";
-import SorridentsMobile from "../../assets/image/carrosel/sorridentsMobile.png";
-import GiolaserMobile from "../../assets/image/carrosel/giolaserMobile.png";
-import SorridenMobile from "../../assets/image/carrosel/sorridenMobile.png";
+import SalusMobile from "../../assets/image/carrosel/salusMobile.webp";
+import SorridentsMobile from "../../assets/image/carrosel/sorridentsMobile.webp";
+import GiolaserMobile from "../../assets/image/carrosel/giolaserMobile.webp";
+import SorridenMobile from "../../assets/image/carrosel/sorridenMobile.webp";
 
-/* import { Player } from "@lottiefiles/react-lottie-player";
-import Animation from "../../assets/image/animation/Seta.json";
- */
+
 export const SectionThree = () => {
   const settings = {
     dots: true,
@@ -107,7 +105,7 @@ export const SectionThree = () => {
         <Slider
           {...settings}
           /*           className="hidden md:block md:w-[80%] 2xl:w-[50%]  h-full bg-deep-orange-600" */
-          className="hidden lg:block w-full relative"
+          className="hidden lg:block w-full relative "
         >
           
           {info.map((item, index) => (
@@ -116,8 +114,8 @@ export const SectionThree = () => {
                 className="gap-10 px-20 g flex flex-col  items-start justify-center bg-cover  lg:min-h-[500px] xl:min-h-[600px] 2xl:min-h-[800px] "
                 style={{ backgroundImage: `url(${item.banner})` }}
               >
-                <img src={item.logo} className="w-[200px]" />
-                <p className="text-left text-xl text-white w-[50%] ">
+                <img src={item.logo} className="w-[200px] " />
+                <p className="text-left text-xl text-white w-[40%] ">
                   {item.text}
                 </p>
                 <a
@@ -140,22 +138,23 @@ export const SectionThree = () => {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-cover   px-20 flex flex-col gap-10 items-start justify-center min-h-[360px] md:min-h-[800px]"
+                className="bg-cover px-20  pb-3 flex flex-col gap-10 items-start justify-end min-h-[360px] md:min-h-[800px]"
                 style={{ backgroundImage: `url(${item.logo})` }}
               >
                 {/*  <img src={item.logo} alt="" className="w-[200px]" />
                 <p className="text-left text-lg leading-9 text-black">
                   {item.text}
-                </p>
-                <a
+                </p>*/}
+                 
+              </a>
+              <a
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#0000f8] p-4 rounded-md w-full flex items-center justify-center  text-white"
+                  className="bg-[#0000f8] w-[80%] mx-auto mt-3 mb-5 p-4  rounded-md  flex items-center justify-center  text-white"
                 >
                   Saiba mais
-                </a> */}
-              </a>
+                </a>
             </div>
           ))}
         </Slider>
