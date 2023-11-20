@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /*     font-family: 'Inter', sans-serif; */
+  font-family: "Poppins", sans-serif !important;
+}
+
+hr {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, transparent, #0000f8, transparent) 1;
+  width: 100% !important;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  hr {
+    width: 80% !important;
+  }
+}
+
+.bg-gradient-black {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #fefefe -78.47%,
+    #dedede 91.61%
+  );
+}
+
+.garantia {
+  filter: drop-shadow(10px 0px 4px #00000091);
+}
+
+@keyframes mover {
+  0% {
+    left: 0;
+    transform: scale(1.2);
+  }
+  50% {
+    left: 25%;
+    transform: scale(1.5);
+  }
+  100% {
+    left: 50%;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes mover-mobile {
+  0% {
+    left: 0;
+    transform: scale(1.5);
+  }
+  50% {
+    left: 25%;
+    transform: scale(2);
+  }
+  100% {
+    left: 45%;
+    transform: scale(1.5);
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: progress;
+}
+body.carregando {
+  overflow: hidden;
+}
+.loading.ocultar {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.loading > svg {
+  width: 100%;
+  max-width: 300px;
+}
+/* .loading svg path {
+  fill: #dc0073;
+  opacity: 0;
+} */
+.loading > svg path.um {
+  animation: opacidade 30s linear infinite;
+  animation-delay: 0.2s;
+}
+.loading > svg path.dois {
+  animation: opacidade 30s linear infinite;
+  animation-delay: 0.4s;
+}
+
+/* Animations */
+@keyframes opacidade {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #ffffff;
+}
+.slick-prev:before,
+.slick-prev:before {
+  color: rgb(255, 255, 255);
+}
+
+strong {
+  color: #fff !important;
+  background-color: #0000f8 !important;
+  line-height: 60px !important;
+}
+
+@media (min-width: 768px) {
+  strong {
+    line-height: 60px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  strong {
+    line-height: 70px !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  strong {
+    line-height: 100px !important;
+  }
+}
+
+
+.vibrate-1 {
+	animation: vibrate-1 8s linear infinite both;
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  80% {
+    -webkit-transform: translate(-8px, 8px);
+            transform: translate(-8px, 8px);
+  }
+  40% {
+    -webkit-transform: translate(-8px, -8px);
+            transform: translate(-8px, -8px);
+  }
+  60% {
+    -webkit-transform: translate(8px, 8px);
+            transform: translate(8px, 8px);
+  }
+  80% {
+    -webkit-transform: translate(8px, -8px);
+            transform: translate(8px, -8px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+
+.slick-dots li button:before{
+  color: #fff;
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before{
+  color: #fff;
+}
