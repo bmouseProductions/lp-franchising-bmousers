@@ -192,7 +192,7 @@ export const SectionEight = () => {
 
               <div className="hidden lg:flex w-full  justify-center ">
                 <a 
-                  href="https://wa.me/5534999306776?text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site%2C+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+de+voc%C3%AAs." 
+                  href="https://bmouseproductions.com/view/atendimento/" 
                   target="_blank" 
                   className="mt-5 w-[80%] md:w-[70%]  py-5 text-center text-xl text-white font-semibold rounded-md bg-[#0000f8] animate-bounce"
                 >
