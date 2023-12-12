@@ -1,5 +1,5 @@
 import { Botao } from "../../components/Button";
-import TomBeta from "../../assets/image/Sobre/TomBeta-6156df0e.webp";
+import TomBeta from "../../assets/image/Sobre/TomBeta.webp";
 
 export const SectionSix = () => {
   return (
