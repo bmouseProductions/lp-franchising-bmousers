@@ -304,7 +304,7 @@ export const Chatbot = () => {
     <>
       {isButtonVisible && (
         /*         <div className="absolute bottom-3 right-3  rounded-full border-2 w-[65px] h-[65px] flex items-center justify-center bg-white"> */
-        <div className="fixed bottom-3 right-3 cursor-pointer ">
+        <div className="fixed bottom-20 right-7 cursor-pointer ">
           <SpeedDial>
             <SpeedDialHandler onClick={handleButtonClick}>
               <FontAwesomeIcon
