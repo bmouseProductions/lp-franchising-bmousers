@@ -304,7 +304,7 @@ export const Chatbot = () => {
     <>
       {isButtonVisible && (
         /*         <div className="absolute bottom-3 right-3  rounded-full border-2 w-[65px] h-[65px] flex items-center justify-center bg-white"> */
-        <div className="fixed bottom-20 right-7 cursor-pointer ">
+        <div className="fixed bottom-20 right-7 cursor-pointer z-50">
           <SpeedDial>
             <SpeedDialHandler onClick={handleButtonClick}>
               <FontAwesomeIcon
@@ -328,7 +328,7 @@ export const Chatbot = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="1000"
-          className="fixed bottom-3 right-3 bg-[#e3e2e2] w-[80%] max-w-[500px] max-h-[700px] h-[500px] sm:w-[60%] md:w-[50%] lg:w-[45%] xl:w-[35%]  2xl:w-[30%] lg:h-[600px] 2xl:h-[650px] rounded-xl flex flex-col shadow-2xl border-2 "
+          className="fixed bottom-3 right-3 z-50 bg-[#e3e2e2] w-[80%] max-w-[500px] max-h-[700px] h-[500px] sm:w-[60%] md:w-[50%] lg:w-[45%] xl:w-[35%]  2xl:w-[30%] lg:h-[600px] 2xl:h-[650px] rounded-xl flex flex-col shadow-2xl border-2 "
         >
           <header className="bg-[#000000] h-[80px] p-5 flex justify-between rounded-t-xl sticky top-0  shadow-xl">
             <img src={Logo} alt="BMOUSE SAÚDE" className="w-[120px]" />

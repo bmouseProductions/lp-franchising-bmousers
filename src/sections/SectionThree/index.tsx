@@ -100,7 +100,7 @@ export const SectionThree = () => {
           autoplay
           loop
           src={swiper}
-          className="mt-10 w-[80px] sm:w-[110px] md:w-[150px] lg:w-[200px] absolute z-50 right-0 "
+          className="mt-10 w-[80px] sm:w-[110px] md:w-[150px] lg:w-[200px] absolute z-40 right-0 "
         />
         <Slider
           {...settings}
